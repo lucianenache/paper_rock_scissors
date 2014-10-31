@@ -1,0 +1,106 @@
+ .header{
+    position:absolute;
+    top:0;
+    text-align: center;
+    width:90%;
+ }
+
+   .container {
+    display: inline;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+
+    text-align: center;
+}
+
+.picks {
+   float:left;
+    list-style-type: none;
+}
+
+.score {
+  
+    list-style-type: none;
+}
+
+.item-container { 
+    position: relative;
+    width:33%;
+    top:5em;
+    float:left;
+
+    sbackground:#cf452d;
+}
+
+img {
+    cursor:pointer;
+    width:auto;
+    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+img:hover {
+    height: 105px;
+}
+
+.item-container .text-content {
+    visibility:hidden;
+}
+
+.item-container:hover .text-content {
+    visibility:visible;
+}
+
+
+/* mobile portrait */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    .item-container { 
+        width:33%;
+        top:15em;
+    }
+}
+
+/* mobile landscape */
+@media only screen 
+and (min-device-width : 460px) 
+and (max-device-width : 768px)
+and (orientation : landscape) {
+    .item-container { 
+        width:33%;
+        top:4em;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .item-container { 
+        width:33%;
+        top:20em;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .item-container { 
+        position: relative;
+        width:33%;
+        top:10em;
+        float:left;  
+    }
+}
+
+
+}

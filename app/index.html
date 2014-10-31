@@ -1,0 +1,47 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>rock paper scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        
+        <div class="row header">
+                <h1>Rock - Paper - Scissors</h1>
+        </div>    
+        <div class="container">          
+                   
+                    <div class="item-container" id="rock-div"> <h3>Rock</h3><img src="assets/polygon-rock.png" />
+                    <span class="text-content">beats Scissors</span>
+                  </div>
+                  
+                  <div class="item-container" id="paper-div"><h3>Paper</h3><img src="assets/polygon-paper.png" />
+                    <span class="text-content">beats Rock</span>
+                  </div>
+                  
+                  <div class="item-container" id="scissors-div"><h3>Scissors</h3><img src="assets/polygon-scissor.png" />
+                    <span class="text-content">beats Paper</span>
+                  </div>
+
+
+      </div>
+
+      <div class="footer">
+        <ul class="picks">
+                <li>Your last pick:<span id="you-pick"></span></li>
+                <li>Computer last pick:<span id ="computer-pick"></span></li>
+         </ul>   
+
+           <ul class="score">
+                <li>You:<span id="you-span"></span></li>
+                <li>Draw:<span id="draw-span"></span></li>
+                <li>Computer:<span id ="computer-span"></span></li>
+         </ul>   
+      </div>
+        <script src="scripts/main.js"></script>
+</body>
+</html>
